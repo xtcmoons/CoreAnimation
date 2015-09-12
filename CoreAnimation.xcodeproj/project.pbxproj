@@ -15,6 +15,7 @@
 		67E593771BA3C5160056B1AF /* CoreAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 67E593761BA3C5160056B1AF /* CoreAnimationTests.m */; };
 		67E593821BA3C5740056B1AF /* CoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67E593811BA3C5740056B1AF /* CoreViewController.m */; };
 		67E593851BA3C7190056B1AF /* CALayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67E593841BA3C7190056B1AF /* CALayerViewController.m */; };
+		67E593881BA40F6E0056B1AF /* BaseAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67E593871BA40F6E0056B1AF /* BaseAnimationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		67E593811BA3C5740056B1AF /* CoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreViewController.m; sourceTree = "<group>"; };
 		67E593831BA3C7190056B1AF /* CALayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CALayerViewController.h; sourceTree = "<group>"; };
 		67E593841BA3C7190056B1AF /* CALayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CALayerViewController.m; sourceTree = "<group>"; };
+		67E593861BA40F6E0056B1AF /* BaseAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAnimationViewController.h; sourceTree = "<group>"; };
+		67E593871BA40F6E0056B1AF /* BaseAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseAnimationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 				67E593811BA3C5740056B1AF /* CoreViewController.m */,
 				67E593831BA3C7190056B1AF /* CALayerViewController.h */,
 				67E593841BA3C7190056B1AF /* CALayerViewController.m */,
+				67E593861BA40F6E0056B1AF /* BaseAnimationViewController.h */,
+				67E593871BA40F6E0056B1AF /* BaseAnimationViewController.m */,
 				67E593641BA3C5160056B1AF /* Main.storyboard */,
 				67E593671BA3C5160056B1AF /* Images.xcassets */,
 				67E593691BA3C5160056B1AF /* LaunchScreen.xib */,
@@ -226,6 +231,7 @@
 			files = (
 				67E593601BA3C5160056B1AF /* AppDelegate.m in Sources */,
 				67E593821BA3C5740056B1AF /* CoreViewController.m in Sources */,
+				67E593881BA40F6E0056B1AF /* BaseAnimationViewController.m in Sources */,
 				67E593851BA3C7190056B1AF /* CALayerViewController.m in Sources */,
 				67E5935D1BA3C5160056B1AF /* main.m in Sources */,
 			);
@@ -424,6 +430,7 @@
 				67E5937C1BA3C5160056B1AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		67E5937D1BA3C5160056B1AF /* Build configuration list for PBXNativeTarget "CoreAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +439,7 @@
 				67E5937F1BA3C5160056B1AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

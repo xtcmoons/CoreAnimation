@@ -8,6 +8,7 @@
 
 #import "CoreViewController.h"
 #import "CALayerViewController.h"
+#import "BaseAnimationViewController.h"
 
 @interface CoreViewController () {
     NSMutableArray *_dataArray;
@@ -22,7 +23,8 @@
 
     self.title = @"Core Animation";
 
-    _dataArray = @[@"CALayer"].mutableCopy;
+    _dataArray = @[@"CALayer",
+                   @"BaseAnimation"].mutableCopy;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -52,10 +54,19 @@
 
 #pragma mark - UITableViewDelegate 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    CALayerViewController *calayerVC = [[CALayerViewController alloc] init];
-    calayerVC.view.backgroundColor = [UIColor whiteColor];
+    if (indexPath.row == 0) {
+        CALayerViewController *calayerVC = [[CALayerViewController alloc] init];
+        calayerVC.view.backgroundColor = [UIColor whiteColor];
 
-    [self.navigationController pushViewController:calayerVC animated:YES];
+        [self.navigationController pushViewController:calayerVC animated:YES];
+
+    } else if (indexPath.row == 1) {
+        BaseAnimationViewController *calayerVC = [[BaseAnimationViewController alloc] init];
+        calayerVC.view.backgroundColor = [UIColor whiteColor];
+
+        [self.navigationController pushViewController:calayerVC animated:YES];
+
+    }
 }
 
 
