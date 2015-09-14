@@ -9,6 +9,10 @@
 #import "CoreViewController.h"
 #import "CALayerViewController.h"
 #import "BaseAnimationViewController.h"
+#import "KeyAnimationVC.h"
+#import "GroupAnimationVC.h"
+#import "TransitionVC.h"
+#import "DisplayLinkVC.h"
 
 @interface CoreViewController () {
     NSMutableArray *_dataArray;
@@ -24,7 +28,11 @@
     self.title = @"Core Animation";
 
     _dataArray = @[@"CALayer",
-                   @"BaseAnimation"].mutableCopy;
+                   @"BaseAnimation",
+                   @"keyFrame",
+                   @"GroupAnimation",
+                   @"Transiton",
+                   @"DisplayLink"].mutableCopy;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -64,6 +72,25 @@
         BaseAnimationViewController *calayerVC = [[BaseAnimationViewController alloc] init];
         calayerVC.view.backgroundColor = [UIColor whiteColor];
 
+        [self.navigationController pushViewController:calayerVC animated:YES];
+
+    } else if (indexPath.row == 2) {
+        KeyAnimationVC *calayerVC = [[KeyAnimationVC alloc] init];
+        calayerVC.view.backgroundColor = [UIColor whiteColor];
+        [self.navigationController pushViewController:calayerVC animated:YES];
+
+    } else if (indexPath.row == 3) {
+        GroupAnimationVC *calayerVC = [[GroupAnimationVC alloc] init];
+        calayerVC.view.backgroundColor = [UIColor whiteColor];
+        [self.navigationController pushViewController:calayerVC animated:YES];
+    } else if (indexPath.row == 4) {
+        TransitionVC *calayerVC = [[TransitionVC alloc] init];
+        calayerVC.view.backgroundColor = [UIColor whiteColor];
+        [self.navigationController pushViewController:calayerVC animated:YES];
+
+    } else if (indexPath.row == 5) {
+        DisplayLinkVC *calayerVC = [[DisplayLinkVC alloc] init];
+        calayerVC.view.backgroundColor = [UIColor whiteColor];
         [self.navigationController pushViewController:calayerVC animated:YES];
 
     }

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67B5CA891BA6581000DA18A6 /* KeyAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B5CA881BA6581000DA18A6 /* KeyAnimationVC.m */; };
+		67B5CA8C1BA65F7100DA18A6 /* GroupAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B5CA8B1BA65F7100DA18A6 /* GroupAnimationVC.m */; };
+		67B5CA8F1BA6AD6800DA18A6 /* TransitionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B5CA8E1BA6AD6800DA18A6 /* TransitionVC.m */; };
+		67B5CA921BA6B85400DA18A6 /* DisplayLinkVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B5CA911BA6B85400DA18A6 /* DisplayLinkVC.m */; };
 		67E5935D1BA3C5160056B1AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67E5935C1BA3C5160056B1AF /* main.m */; };
 		67E593601BA3C5160056B1AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67E5935F1BA3C5160056B1AF /* AppDelegate.m */; };
 		67E593661BA3C5160056B1AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67E593641BA3C5160056B1AF /* Main.storyboard */; };
@@ -29,6 +33,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		67B5CA871BA6581000DA18A6 /* KeyAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyAnimationVC.h; sourceTree = "<group>"; };
+		67B5CA881BA6581000DA18A6 /* KeyAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyAnimationVC.m; sourceTree = "<group>"; };
+		67B5CA8A1BA65F7100DA18A6 /* GroupAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupAnimationVC.h; sourceTree = "<group>"; };
+		67B5CA8B1BA65F7100DA18A6 /* GroupAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupAnimationVC.m; sourceTree = "<group>"; };
+		67B5CA8D1BA6AD6800DA18A6 /* TransitionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionVC.h; sourceTree = "<group>"; };
+		67B5CA8E1BA6AD6800DA18A6 /* TransitionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionVC.m; sourceTree = "<group>"; };
+		67B5CA901BA6B85400DA18A6 /* DisplayLinkVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayLinkVC.h; sourceTree = "<group>"; };
+		67B5CA911BA6B85400DA18A6 /* DisplayLinkVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayLinkVC.m; sourceTree = "<group>"; };
 		67E593571BA3C5160056B1AF /* CoreAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67E5935B1BA3C5160056B1AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67E5935C1BA3C5160056B1AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -95,6 +107,14 @@
 				67E593841BA3C7190056B1AF /* CALayerViewController.m */,
 				67E593861BA40F6E0056B1AF /* BaseAnimationViewController.h */,
 				67E593871BA40F6E0056B1AF /* BaseAnimationViewController.m */,
+				67B5CA871BA6581000DA18A6 /* KeyAnimationVC.h */,
+				67B5CA881BA6581000DA18A6 /* KeyAnimationVC.m */,
+				67B5CA8A1BA65F7100DA18A6 /* GroupAnimationVC.h */,
+				67B5CA8B1BA65F7100DA18A6 /* GroupAnimationVC.m */,
+				67B5CA8D1BA6AD6800DA18A6 /* TransitionVC.h */,
+				67B5CA8E1BA6AD6800DA18A6 /* TransitionVC.m */,
+				67B5CA901BA6B85400DA18A6 /* DisplayLinkVC.h */,
+				67B5CA911BA6B85400DA18A6 /* DisplayLinkVC.m */,
 				67E593641BA3C5160056B1AF /* Main.storyboard */,
 				67E593671BA3C5160056B1AF /* Images.xcassets */,
 				67E593691BA3C5160056B1AF /* LaunchScreen.xib */,
@@ -230,8 +250,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				67E593601BA3C5160056B1AF /* AppDelegate.m in Sources */,
+				67B5CA8C1BA65F7100DA18A6 /* GroupAnimationVC.m in Sources */,
+				67B5CA891BA6581000DA18A6 /* KeyAnimationVC.m in Sources */,
 				67E593821BA3C5740056B1AF /* CoreViewController.m in Sources */,
 				67E593881BA40F6E0056B1AF /* BaseAnimationViewController.m in Sources */,
+				67B5CA8F1BA6AD6800DA18A6 /* TransitionVC.m in Sources */,
+				67B5CA921BA6B85400DA18A6 /* DisplayLinkVC.m in Sources */,
 				67E593851BA3C7190056B1AF /* CALayerViewController.m in Sources */,
 				67E5935D1BA3C5160056B1AF /* main.m in Sources */,
 			);
