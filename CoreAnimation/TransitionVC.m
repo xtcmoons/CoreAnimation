@@ -47,6 +47,7 @@
 }
 
 - (void)transitionAnimation:(BOOL)isNext {
+    /*
     CATransition *transition = [[CATransition alloc] init];
 //    transition.type = @"oglFlip";
     [transition setType:kCATransitionFade];
@@ -58,9 +59,24 @@
     }
 
     transition.duration = 1.0f;
+     */
 
-    _imageView.image = [self getImage:isNext];
-    [_imageView.layer addAnimation:transition forKey:@"KCTransitionAnimation"];
+    UIViewAnimationOptions option;
+    if (isNext) {
+        option = UIViewAnimationOptionCurveLinear | UIViewAnimationOptionTransitionFlipFromRight;
+    } else {
+        option = UIViewAnimationOptionCurveLinear | UIViewAnimationOptionTransitionFlipFromLeft;
+    }
+
+    [UIView transitionWithView:_imageView
+                      duration:1.0
+                       options:option
+                    animations:^{
+                        _imageView.image = [self getImage:isNext];
+                    } completion:^(BOOL finished) {
+
+                    }];
+
 }
 
 - (UIImage *)getImage:(BOOL)isNext {

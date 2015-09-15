@@ -75,8 +75,9 @@
 
     [UIView animateWithDuration:5.0
                           delay:0
-                        options:UIViewAnimationOptionCurveLinear
+                        options:UIViewAnimationOptionCurveEaseInOut
                      animations:^{
+                         
                          [UIView addKeyframeWithRelativeStartTime:0.0
                                                  relativeDuration:0.5
                                                        animations:^{
